@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app"
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "18.18.0"
   },
   "keywords": [],
   "author": "",
