@@ -9,6 +9,4 @@ router.route("/count").get(getCountQuiz)
 router.route("/:id").get(validateObjectId, getSingleQuizCtrl)
     .put(validateObjectId, verifyToken, updateQuizCtrl).delete(validateObjectId, verifyToken, deleteQuizCtrl)
 
-
-
 module.exports = router
