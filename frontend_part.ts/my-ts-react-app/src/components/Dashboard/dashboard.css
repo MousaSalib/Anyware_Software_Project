@@ -1,0 +1,82 @@
+.containerDashboard {
+    display: flex;
+}
+.leftSide {
+    background-color: rgb(7, 56, 71);
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    overflow-y: auto; 
+}
+.icons {
+    padding: 20px;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+.icons:hover {
+    background-color: white;
+    color: rgb(7, 56, 71);
+}
+.topRightSide {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+    transition: margin-left 0.3s;
+}
+nav {
+    background-color: rgb(7, 56, 71);
+    
+}
+nav div h3 {
+    margin-left: 10px;
+}
+nav Link, button {
+    margin-right: 10px;
+}
+nav i {
+    font-size: 20px;
+    padding-right: 10px;
+    color: rgb(7, 56, 71);
+  }
+  
+@media (max-width: 768px) {
+    .leftSide {
+        height: 100%;
+    }
+    .leftSide p {
+        padding-left: 20px;
+    }
+    .topRightSide,
+    nav {
+        padding-left: 10px;
+        padding-right: 10PX;
+    }
+    .icons i{
+        display: none;
+        padding:0; 
+    }
+    .nav-link {
+        padding-left: 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .btn-outline-danger {
+        margin-top: 5px;
+        
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .leftSide h1 {
+        font-size: 24px;
+    }
+    .nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+    input {
+        margin-left: auto;
+    }
+}
