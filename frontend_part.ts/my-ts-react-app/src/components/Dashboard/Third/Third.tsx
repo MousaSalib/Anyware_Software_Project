@@ -29,7 +29,6 @@ const Third: React.FC = () => {
       try {
         const response = await axios.get('http://localhost:8001/api/announcement');
         setAnnouncements(response.data.announcements);
-        console.log(response.data.announcements);
       } catch (error) {
         console.log(error);
       } finally {
