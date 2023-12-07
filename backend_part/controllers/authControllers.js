@@ -17,7 +17,7 @@ module.exports.loginAdminCtrl = asyncHandler(async (req, res) => {
         const token = jwt.sign({ sub: user.id, role: user.role }, secretKey);
         res.status(200).json({message: "Welcome", token})
     }
-})
+});
 
 module.exports.registerUserCtrl = asyncHandler(async(req, res) => {
     const {error} = validateRegisterUser(req.body);
